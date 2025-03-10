@@ -1,4 +1,4 @@
-.App {
+/* .App {
     text-align: center;
 }
 
@@ -32,4 +32,41 @@
 
 .cell.Yellow {
     background-color: yellow;
+} */
+
+.board {
+    display: flex;
+    table-layout: fixed;
+    flex-direction: column;
+    width: 600px;
+    margin: 0px auto;
+    background-color: #c0bbba;
+    border-collapse: separate;
+    border-spacing: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #c0bbba;
+    border-radius: 50%;
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.cell.highlight {
+    background-color: #f0f8ff;
 }
